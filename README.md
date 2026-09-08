@@ -3,7 +3,7 @@
 YouTube metadata for long VODs — titles, a plain description, chapters, tags, Shorts cuts, thumbnail text, and a pinned comment. It learns how *you* edit so the next run takes less cleanup.
 
 **Use the app:** sign in on the published grok.me site (the link you opened after Publish).  
-GitHub is the public face of the product. The running app, accounts, and database live on grok.me — not here.
+This page is the public face of the product. The running app, accounts, and database live on grok.me — not here.
 
 ---
 
@@ -45,13 +45,17 @@ It will not paste this VOD’s times or dungeon names onto the next one. Clocks 
 - **Updates** — a short, plain-English log of what changed in the published app.
 - **Billing** — trial credits, redeem codes, or your own xAI key (the secret that starts with `xai-`, not “Copy key ID”).
 
-Everything is per signed-in user. Other people do not train on your VODs.
+The app footer also links here. Everything is per signed-in user. Other people do not train on your VODs.
 
 ---
 
 ## Update log
 
 Newest first. Same notes appear under **Updates** in the app.
+
+### September 8, 2026 — Public GitHub page
+
+- The footer now links to this public GitHub page: how the app works and the update log. Source stays private.
 
 ### September 8, 2026 — Chapters you can actually edit
 
