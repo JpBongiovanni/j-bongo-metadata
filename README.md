@@ -1,6 +1,6 @@
 # J. Bongo's Metadata Generator
 
-YouTube metadata for long VODs — titles, a plain description, chapters, tags, Shorts cuts, thumbnail text, and a pinned comment. It learns how *you* edit so the next run takes less cleanup.
+YouTube metadata for long VODs — titles, a plain description, chapters, and tags. It learns how *you* edit so the next run takes less cleanup.
 
 **App:** [j-bongo-metadata.grok.me](https://j-bongo-metadata.grok.me)  
 Sign in with Google or X. This GitHub page is the public face of the product. The running app, accounts, and database live on grok.me — not here. Source is not in this repo.
@@ -16,18 +16,20 @@ You get:
 - Five title options
 - A short factual description (no hype)
 - A chapter list (time + title) you can edit, add, delete, or reorder
-- Tags, three Shorts cuts, thumbnail text, and a pinned-comment CTA
-- Themes pulled from the talk
+- A **YouTube description** preview (write-up + chapters) with **Copy for Studio**
+- Tags
+- Optional extras under Additional information: Shorts cuts, thumbnail text, pinned comment, themes
 
-It is not locked to one game or niche. A basketball VOD and a design-talk VOD both work. Fill **Voice** so the writing sounds like your channel.
+It is not locked to one game or niche. A basketball VOD and a design-talk VOD both work. Fill **Voice**, or Connect YouTube so the first run can copy how your last titles were built.
 
 ## How a normal run goes
 
 1. Sign in.
 2. In YouTube Studio, download the `.sbv` (or `.srt`) and the transcript `.txt`.
-3. On Generate, add a title and upload both files (or paste them).
+   **Or** Connect YouTube and click a recent long video (Shorts are hidden) to fill the title and captions.
+3. On Generate, add a title and upload both files if you did not use a card.
 4. Click **Generate metadata**.
-5. Edit the results until you would actually publish them.
+5. Check the YouTube description preview. Edit titles, description, chapters, and tags until you would actually publish them.
 6. Click **Save edits for learning** — that is *your* account only.
 7. Click **Clear for next VOD** before you load a different video.
 
@@ -39,13 +41,15 @@ You do **not** have to shorten the transcript first. Chapter times always come f
 
 This is not a privately trained model. After you save a few corrected runs, later drafts copy **your style**: how you title chapters, how many you keep, how spread-out they are, and the tone of your description and tags.
 
+If you Connect YouTube, Voice also shows titles from your last 10 long videos. Generate copies title *shape* and tag density from those — not old episode names. Saved edits still win once you have a few.
+
 It will not paste this VOD’s times or dungeon names onto the next one. Clocks always come from **this file’s** captions.
 
 ## Tabs
 
-- **Generate** — load a VOD and get metadata.
+- **Generate** — load a VOD and get metadata. Optional YouTube cards after Connect.
 - **Library** — private search of your past runs (“what did I say about Zant”).
-- **Voice** — a short form: channel type, tone, title style, audience, phrases, extra rules.
+- **Voice** — a short form: channel type, tone, title style, audience, phrases, extra rules. Also shows channel memory if you connected YouTube.
 - **Prompt** — the recipe for titles, description, and chapters.
 - **Billing** — 3 trial generations, then $12 for 20 more, or a redeem code. Some people use their own xAI key (the secret that starts with `xai-`, not “Copy key ID”).
 - **Help** — the same walkthrough as this page, inside the app.
@@ -60,6 +64,26 @@ The app footer also links here. Everything is per signed-in user. Other people d
 ## Update log
 
 Newest first. Same notes appear under **Update Log** in the app.
+
+### September 18, 2026 — Channel memory from your last videos
+
+- After Connect YouTube, Voice shows titles from your last 10 long videos. The next Generate copies title shape and tag density from those, not old episode names. You can turn that off on Voice.
+
+### September 18, 2026 — Results page is cleaner
+
+- Shorts cuts, thumbnail text, pinned comment, and themes now sit under Additional information so the main results stay titles, description, chapters, the YouTube preview, and tags.
+
+### September 18, 2026 — YouTube description preview
+
+- After Generate, you can see the Description field the way YouTube will: a short write-up, then chapter times. Copy for Studio pastes that whole block. It also warns if chapters would not unlock on YouTube (need 0:00, at least 3, 10 seconds apart).
+
+### September 18, 2026 — YouTube cards hide Shorts
+
+- Connect YouTube now lists regular videos only. Clips under 3 minutes and #Shorts posts are left out.
+
+### September 17, 2026 — Optional YouTube video cards
+
+- Connect the Google account that owns your channel, then click a recent upload to fill the title and captions. Generate is unchanged. File upload still works if YouTube has no captions or the daily YouTube shortcut limit is full.
 
 ### September 16, 2026 — Help and Update Log tabs
 
