@@ -3,11 +3,11 @@
 Livemark for live chapters. Metadata Generator for titles, description, and tags. One Google or X account. Adding another tool later is a card on the home grid, not a new login.
 
 **App:** [j-bongo-metadata.grok.me](https://j-bongo-metadata.grok.me)  
-Sign in with Google or X. Home opens on a **J. Bongo Studio** banner and preview cards for Livemark and Metadata. This GitHub page is the public face of the product. The running app, accounts, and database live on grok.me — not here. Source is not in this repo.
+Apps, Help, and the Update Log are public. Sign in with Google or X to Generate, Align, Connect YouTube, or save your work. Home opens on a **J. Bongo Studio** banner and preview cards for Livemark and Metadata. **Donate** in the header is a tip (not a credit pack). This GitHub page is the public face of the product. The running app, accounts, and database live on grok.me — not here. Source is not in this repo.
 
 ## The two tools
 
-**Livemark** — drop chapter marks in OBS while you stream. Go Live does **not** start the clock: bind **Livemark: Start clock** and hit it when the stream actually begins, then **Livemark: Mark chapter** at each chapter. Each clock-start writes a dated `.jsonl` (for example `livemark-marks-2026-09-21-144532.jsonl`). The OBS script pack is **$3 once** per account (a Metadata generation pack also unlocks it). After YouTube has the replay, click a connected VOD (or paste the URL), import that file, Align (**Mark is here**), copy a chapter block that starts at `0:00`. Align, copy, and download spend **no** generation credits. If YouTube is connected, **Send to Metadata** also brings that VOD’s captions. OBS does not listen to you — `title` in the file is a placeholder until you rename chapters in Livemark.
+**Livemark** — drop chapter marks in OBS while you stream. Go Live does **not** start the clock: bind **Livemark: Start clock** and hit it when the stream actually begins, then **Livemark: Mark chapter** at each chapter. Each clock-start writes a dated `.jsonl` (for example `livemark-marks-2026-09-21-144532.jsonl`). The OBS script is **free**. After YouTube has the replay, click a connected VOD (or paste the URL), import that file, Align (**Mark is here**), copy a chapter block that starts at `0:00`. Align, copy, and download spend **no** generation credits. If YouTube is connected, **Send to Metadata** also brings that VOD’s captions. OBS does not listen to you — `title` in the file is a placeholder until you rename chapters in Livemark.
 
 **Metadata Generator** — titles, a plain description, chapters, and tags from captions. It learns how *you* edit so the next run takes less cleanup. **Generate metadata** spends one credit, same as before.
 
@@ -55,9 +55,9 @@ It will not paste this VOD’s times or dungeon names onto the next one. Clocks 
 
 ## Apps and tabs
 
-Home is **Apps**. Livemark and Metadata are the first two cards.
+Home is **Apps**. Livemark and Metadata are the first two cards. Five latest live streams sit on the left, five latest Shorts from @J.BongoShorts on the right.
 
-- **Livemark** — replay URL, OBS import, Align, copy chapters. Help and OBS pack live in that header.
+- **Livemark** — replay URL, OBS import, Align, copy chapters. Help and the free OBS pack live in that header.
 - **Generate** — load a VOD and get metadata. Optional YouTube cards after Connect.
 - **Library** — private search of your past runs (“what did I say about Zant”).
 - **Voice** — a short form: channel type, tone, title style, audience, phrases, extra rules. Also shows channel memory if you connected YouTube.
@@ -66,7 +66,9 @@ Home is **Apps**. Livemark and Metadata are the first two cards.
 - **Help** — the same walkthrough as this page, inside the app.
 - **Update Log** — what changed, in plain English.
 
-The orange chip in the header shows how many generations you have left (or Unlimited). Livemark Align never decrements it.
+The orange chip in the header shows how many generations you have left (or Unlimited). Livemark Align never decrements it. **Donate** is a tip (X or Venmo), not a credit pack.
+
+Apps, Help, and the Update Log are public. Sign in to Generate, Align, Connect YouTube, or save edits. Library, Voice, and Billing need an account.
 
 The app footer also links here. Everything is per signed-in user. Other people do not train on your VODs.
 
@@ -75,6 +77,22 @@ The app footer also links here. Everything is per signed-in user. Other people d
 ## Update log
 
 Newest first. Same notes appear under **Update Log** in the app.
+
+### September 22, 2026 — Look around without signing in
+
+- Apps, Help, and the Update Log are public. You can open Livemark and Generate to see how they work. Sign in with X or Google before you Generate, Align, Connect YouTube, or save edits. Library, Voice, and Billing still need an account.
+
+### September 22, 2026 — YouTube rails around the apps
+
+- Home is three columns: five latest live streams on the left, the tools in the middle, five latest Shorts on the right. Shorts come from @J.BongoShorts, not the main channel. On a phone the tools stay on top, then streams, then Shorts.
+
+### September 22, 2026 — Donate is in the header
+
+- Donate sits next to your credits chip. It opens tip options: X (@JBongoGamer) and Venmo (@Jason-Bongiovanni). Donate does not buy generations.
+
+### September 22, 2026 — Livemark OBS script is free
+
+- The OBS chapter-mark pack is no longer $3. Signed-in users can download it from Livemark. Generate metadata still uses credits.
 
 ### September 21, 2026 — Start clock is its own OBS hotkey
 
