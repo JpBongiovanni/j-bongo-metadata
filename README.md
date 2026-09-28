@@ -1,15 +1,17 @@
 # J. Bongo Studio
 
-Livemark for live chapters. Metadata Generator for titles, description, and tags. One Google or X account. Adding another tool later is a card on the home grid, not a new login.
+Livemark for live chapters. Metadata Generator for titles, description, and tags. Streaming Strategy for what’s live on Twitch and how your own streams are doing. One Google or X account. Adding another tool later is a card on the home grid, not a new login.
 
 **App:** [j-bongo-metadata.grok.me](https://j-bongo-metadata.grok.me)  
-Apps, Help, and the Update Log are public. Sign in with Google or X to Generate, Align, Connect YouTube, or save your work. Home opens on a **J. Bongo Studio** banner and preview cards for Livemark and Metadata. **Donate** in the header is a tip (not a credit pack). This GitHub page is the public face of the product. The running app, accounts, and database live on grok.me — not here. Source is not in this repo.
+Apps, Help, and the Update Log are public. Sign in with Google or X to Generate, Align, Connect YouTube, or save your work. Home opens on a **J. Bongo Studio** banner and preview cards for Livemark, Metadata, and Streaming Strategy. **Donate** in the header is a tip (not a credit pack). This GitHub page is the public face of the product. The running app, accounts, and database live on grok.me — not here. Source is not in this repo.
 
-## The two tools
+## The three apps
 
-**Livemark** — drop chapter marks in OBS while you stream. Go Live does **not** start the clock: bind **Livemark: Start clock** and hit it when the stream actually begins, then **Livemark: Mark chapter** at each chapter. Each clock-start writes a dated `.jsonl` (for example `livemark-marks-2026-09-21-144532.jsonl`). The OBS script is **free**. After YouTube has the replay, click a connected VOD (or paste the URL), import that file, Align (**Mark is here**), copy a chapter block that starts at `0:00`. Align, copy, and download spend **no** generation credits. If YouTube is connected, **Send to Metadata** also brings that VOD’s captions. OBS does not listen to you — `title` in the file is a placeholder until you rename chapters in Livemark.
+**Livemark** is for chapter marks while you are live. Use it when you stream and want a chapter list before YouTube has finished the VOD. Bind Start clock and hit it when the stream actually begins, then Mark chapter in OBS at each moment that should be a chapter. After the replay is up, import that marks file, line one mark up with the video, and copy a chapter block that starts at 0:00. You can change one mark’s time without moving the others. Align, copy, and the OBS download do not spend a credit. Send the result to Metadata when you want titles and tags.
 
-**Metadata Generator** — titles, a plain description, chapters, and tags from captions. It learns how *you* edit so the next run takes less cleanup. **Generate metadata** spends one credit, same as before.
+**Metadata Generator** turns a caption file and a transcript into titles, a plain description, chapters, and tags. Use it after a VOD, when you would otherwise write the YouTube description by hand. A game stream and a talk both work. Generate spends one credit. If you fix the draft and save those edits, the next run copies how you title and tag. If YouTube has no captions yet, upload an MP3 from the stream and it fills the transcript.
+
+**Streaming Strategy Assistant** shows whether a game is crowded on Twitch right now, and three numbers about your own streams. Use it when you are deciding what to play, or checking whether a recent series is holding a room. Search a name like Zelda and Twitch returns the live categories for it, with viewers, channels, and crowded, busy, quieter, or quiet. My streams shows your typical room, how this title compares with your other lives, and whether the last session ran long. It does not spend a credit, and it will not tell you to quit a game.
 
 If you just streamed: Livemark first, then **Send to Metadata**. You do not have to wait for YouTube captions.
 
@@ -55,10 +57,11 @@ It will not paste this VOD’s times or dungeon names onto the next one. Clocks 
 
 ## Apps and tabs
 
-Home is **Apps**. Livemark and Metadata are the first two cards. Five latest live streams sit on the left, five latest Shorts from @J.BongoShorts on the right.
+Home is **Apps**. Livemark, Metadata, and Streaming Strategy are the cards. Five latest live streams sit on the left, five latest Shorts from @J.BongoShorts on the right.
 
 - **Livemark** — replay URL, OBS import, Align, copy chapters. Help and the free OBS pack live in that header.
 - **Generate** — load a VOD and get metadata. Optional YouTube cards after Connect.
+- **Streaming Strategy** — search Twitch for a game, then three numbers about your own streams. No credit.
 - **Library** — private search of your past runs (“what did I say about Zant”).
 - **Voice** — a short form: channel type, tone, title style, audience, phrases, extra rules. Also shows channel memory if you connected YouTube.
 - **Prompt** — the recipe for titles, description, and chapters.
