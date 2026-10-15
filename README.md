@@ -1,5 +1,7 @@
 # J. Bongo Studio
 
+This studio is a proof of concept. I directed Grok Build to make it. I set up the agent and the console APIs. I did not write the application code.
+
 Livemark for live chapters. Metadata Generator for titles, description, and tags. Streaming Strategy for what’s live on Twitch and how your own streams are doing. One Google or X account. Adding another tool later is a card on the home grid, not a new login.
 
 **App:** [j-bongo-metadata.grok.me](https://j-bongo-metadata.grok.me)  
@@ -9,7 +11,7 @@ Apps, Help, and the Update Log are public. Sign in with Google or X to Generate,
 
 **Livemark** is for chapter marks while you are live. Use it when you stream and want a chapter list before YouTube has finished the VOD. Bind Start clock and hit it when the stream actually begins, then Mark chapter in OBS at each moment that should be a chapter. After the replay is up, import that marks file, line one mark up with the video, and copy a chapter block that starts at 0:00. You can change one mark’s time without moving the others. Align, copy, and the OBS download do not spend a credit. Send the result to Metadata when you want titles and tags.
 
-**Metadata Generator** turns a caption file and a transcript into titles, a plain description, chapters, and tags. Use it after a VOD, when you would otherwise write the YouTube description by hand. A game stream and a talk both work. Generate spends one credit. If you fix the draft and save those edits, the next run copies how you title and tag. If YouTube has no captions yet, upload an MP3 from the stream and it fills the transcript.
+**Metadata Generator** turns a caption file and a transcript into titles, a plain description, chapters, and tags. Use it after a VOD, when you would otherwise write the YouTube description by hand. A game stream and a talk both work. Generate spends one credit. If you fix the draft and save those edits, the next run copies how you title and tag. If YouTube has no captions yet, upload an MP3 from the stream and it fills the transcript. Clicking a YouTube video keeps that video’s title and suggests five others from the captions. Find shorts walks the caption file for up to 20 moments. Neither of those clicks spends a credit.
 
 **Streaming Strategy Assistant** shows whether a game is crowded on Twitch right now, and three numbers about your own streams. Use it when you are deciding what to play, or checking whether a recent series is holding a room. Search a name like Zelda and Twitch returns the live categories for it, with viewers, channels, and crowded, busy, quieter, or quiet. My streams shows your typical room, how this title compares with your other lives, and whether the last session ran long. It does not spend a credit, and it will not tell you to quit a game.
 
@@ -57,7 +59,7 @@ It will not paste this VOD’s times or dungeon names onto the next one. Clocks 
 
 ## Apps and tabs
 
-Home is **Apps**. Livemark, Metadata, and Streaming Strategy are the cards. Five latest live streams sit on the left, five latest Shorts from @J.BongoShorts on the right.
+Home is **Apps**. Livemark, Metadata, and Streaming Strategy are the cards. Five latest live streams sit on the left, five latest Shorts from @J.BongoShorts on the right. The home page says this is a proof of concept directed with Grok Build.
 
 - **Livemark** — replay URL, OBS import, Align, copy chapters. Help and the free OBS pack live in that header.
 - **Generate** — load a VOD and get metadata. Optional YouTube cards after Connect.
@@ -80,6 +82,10 @@ The app footer also links here. Everything is per signed-in user. Other people d
 ## Update log
 
 Newest first. Same notes appear under **Update Log** in the app.
+
+### October 15, 2026 — Home says this was directed, not hand-built
+
+- The home page and this page now say the studio is a proof of concept directed with Grok Build. The console APIs were set up by hand. The application code was not.
 
 ### September 22, 2026 — Look around without signing in
 
